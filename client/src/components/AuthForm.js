@@ -56,7 +56,7 @@ export default class AuthForm extends Component {
                   {errors.message}
                 </div>
               )}
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email">Email: (Required)</label>
               <input
                 className="form-control"
                 id="email"
@@ -65,7 +65,7 @@ export default class AuthForm extends Component {
                 value={email}
                 type="text"
               />
-              <label htmlFor="password">Password:</label>
+              <label htmlFor="password">Password: (Required)</label>
               <input
                 className="form-control"
                 id="password"
@@ -75,7 +75,7 @@ export default class AuthForm extends Component {
               />
               {signUp && (
                 <div>
-                  <label htmlFor="username">Username:</label>
+                  <label htmlFor="username">Username: (Required)</label>
                   <input
                     className="form-control"
                     id="username"
@@ -84,7 +84,7 @@ export default class AuthForm extends Component {
                     value={username}
                     type="text"
                   />
-                  <label htmlFor="image-url">Image URL:</label>
+                  <label htmlFor="image-url">Profile Image URL: (Optional)</label>
                   <input
                     className="form-control"
                     id="image-url"
@@ -96,6 +96,7 @@ export default class AuthForm extends Component {
                 </div>
               )}
               <button
+                style={{ marginTop: 20 }}
                 type="submit"
                 className="btn btn-primary btn-block btn-lg"
               >

@@ -14,7 +14,7 @@ const Main = props => {
   return (
     <div className="container">
       <Switch>
-        <Route exact path="/" render={props => <Homepage currentUser={currentUser} {...props} />} />
+        <Route exact path="/" render={ props => <Homepage currentUser={currentUser} {...props} /> } />
         <Route exact path="/signin" render={props => {
             return (
               <AuthForm
@@ -36,7 +36,7 @@ const Main = props => {
                 onAuth={authUser}
                 signUp
                 buttonText="Sign me up!"
-                heading="Join Warbler today."
+                heading="Join SHS Senior Assassination today."
                 {...props}
               />
             );
